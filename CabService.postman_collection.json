@@ -1,0 +1,121 @@
+{
+	"info": {
+		"_postman_id": "249173f5-1363-475d-88f8-d608e845bc28",
+		"name": "CabService",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "add cab",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"swift\",\r\n    \"carNo\":\"KA-2005\",\r\n    \"xCoordinate\":10,\r\n    \"yCoordinate\":10\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/cabService/cab",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cabService",
+						"cab"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Driver",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Jhon\",\r\n    \"age\":\"21\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/cabService/driver",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cabService",
+						"driver"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add customer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Jhon\",\r\n    \"age\":\"21\",\r\n    \"gender\": \"male\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/cabService/customer",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cabService",
+						"customer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "bookCab",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"customerId\":1,\r\n    \"xCoordinate\":0,\r\n    \"yCoordinate\":0,\r\n    \"cabType\":\"mini\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/cabService/book",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cabService",
+						"book"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
